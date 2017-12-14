@@ -10,18 +10,18 @@
 <title>Hugo Creative Theme</title>
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
 <!-- Bootstrap Core CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
 <!-- Custom Fonts -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
 <!-- Plugin CSS -->
-<link rel="stylesheet" href="css/animate.min.css" type="text/css">
+<link rel="stylesheet" href="/css/animate.min.css" type="text/css">
 <!-- Custom CSS -->
-<link rel="stylesheet" href="css/creative.css" type="text/css">
-<link rel="stylesheet" href="css/modals.css" type="text/css">
+<link rel="stylesheet" href="/css/creative.css" type="text/css">
+<link rel="stylesheet" href="/css/modals.css" type="text/css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -92,10 +92,34 @@
                 <p></p>
             
             
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Get started!</a>
+                <a href="#about"  onclick="myFunction()"  class="btn btn-primary btn-xl page-scroll">Today Mess Menu</a>
             
-        </div>
+            <p id="demo"></p>
+
+
+
+
+
+     
+
+
+<script >
+    var today = new Date();
+    var h = today.getHours();
+    var d = today.getDay();
+    if (h <5)
+        var s="hi";
+    else
+        var s = "hoy";
+
+    var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    document.getElementById("demo").innerHTML = days[d]+s;
+
+</script>
+
+   </div>
     </div>
+
 </header>
 
         
@@ -120,40 +144,132 @@
             
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                    <h3>Venky</h3>
+                   
+                    <h3>General Secreatary</h3>
                     
-                        <p class="text-muted">General Secreatary</p>
+                        <p class="text-muted"> Venkatesh Kadam</p>
                     
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary"></i>
-                    <h3>Arun Verma</h3>
                     
-                        <p class="text-muted">System Administrator</p>
+                        <p class="text-muted"> gsech14@iitb.ac.in</p>
+                    
+                    
+                        <p class="text-muted"> &#43;91 9833582664</p>
+                    
+                    
                     
                 </div>
             </div>
             
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary"></i>
-                    <h3>Deepesh</h3>
+                   
+                    <h3>Warden </h3>
                     
-                        <p class="text-muted">Mess Secretary</p>
+                        <p class="text-muted"> Prof. Aftab Alam </p>
+                    
+                    
+                        <p class="text-muted">  h14warden@iitb.ac.in </p>
+                    
+                    
+                        <p class="text-muted"> aftab.o@gmail.com </p>
+                    
+                    
                     
                 </div>
             </div>
             
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-heart wow bounceIn text-primary"></i>
-                    <h3>Julia</h3>
+                   
+                    <h3> Associate Warden </h3>
                     
-                        <p class="text-muted">Maintainance Secretary</p>
+                        <p class="text-muted">  Prof. Rajarshi Chakrabarti</p>
+                    
+                    
+                        <p class="text-muted">  rajarshi.chakrabarti@gmail.com</p>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                   
+                    <h3> Hall Manager </h3>
+                    
+                        <p class="text-muted">  Mr. Naresh Talawadkar</p>
+                    
+                    
+                        <p class="text-muted">  h14hallmgr@iitb.ac.in</p>
+                    
+                    
+                        <p class="text-muted">  &#43;91 22 2576 2614/2714</p>
+                    
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                   
+                    <h3>  System Administrator  </h3>
+                    
+                        <p class="text-muted">  Arun Verma</p>
+                    
+                    
+                        <p class="text-muted">   sysadh14@iitb.ac.in</p>
+                    
+                    
+                        <p class="text-muted">  8454992706</p>
+                    
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                   
+                    <h3>  Sports Councilor </h3>
+                    
+                        <p class="text-muted">  Navneet Bharadwaj</p>
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                   
+                    <h3>   Maintenance secretary  </h3>
+                    
+                        <p class="text-muted">  Swaroop Anand</p>
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                   
+                    <h3>    Mess Secretary</h3>
+                    
+                        <p class="text-muted">   Ambika Shukla,Govardhan Rao Thalluri</p>
+                    
+                    
+                    
+                        <p class="text-muted">  7738718232</p>
+                    
+                    
                     
                 </div>
             </div>
@@ -171,7 +287,7 @@
             
                 <div class="col-lg-4 col-sm-6">
                     <a href="#portfolioModal1" class="portfolio-box portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
                         
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
@@ -199,12 +315,12 @@
                                 <div class="portfolio-box-caption-content">
                                     
                                         <div class="project-category text-faded">
-                                            Web Development
+                                             
                                         </div>
                                     
                                     
                                         <div class="project-name">
-                                            Project 2
+                                            Mess Facility
                                         </div>
                                     
                                 </div>
@@ -226,7 +342,7 @@
                                     
                                     
                                         <div class="project-name">
-                                            Project 3
+                                            Maintance and Lan Complaint
                                         </div>
                                     
                                 </div>
@@ -243,12 +359,12 @@
                                 <div class="portfolio-box-caption-content">
                                     
                                         <div class="project-category text-faded">
-                                            Web Development
+                                             
                                         </div>
                                     
                                     
                                         <div class="project-name">
-                                            Project 5
+                                            Guest Room Booking
                                         </div>
                                     
                                 </div>
@@ -265,12 +381,12 @@
                                 <div class="portfolio-box-caption-content">
                                     
                                         <div class="project-category text-faded">
-                                            Web Development
+                                             
                                         </div>
                                     
                                     
                                         <div class="project-name">
-                                            Project 4
+                                            Lan Complaint
                                         </div>
                                     
                                 </div>
@@ -287,12 +403,34 @@
                                 <div class="portfolio-box-caption-content">
                                     
                                         <div class="project-category text-faded">
-                                            Web Development
+                                             
                                         </div>
                                     
                                     
                                         <div class="project-name">
-                                            Project 6
+                                            Facebook Group
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                    </a>
+                </div>
+            
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal6" class="portfolio-box portfolio-link" data-toggle="modal">
+                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                        
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    
+                                        <div class="project-category text-faded">
+                                             
+                                        </div>
+                                    
+                                    
+                                        <div class="project-name">
+                                            Facebook Group
                                         </div>
                                     
                                 </div>
@@ -390,9 +528,9 @@
                         
                             <hr class="star-primary">
                         
-                        <img src="img/portfolio/1.jpg" class="img-responsive img-centered" alt="">
+                        #################<img src="img/portfolio/2.jpg" class="img-responsive img-centered" alt="">
                         
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim aliquid dicta ullam in repellendus amet perspiciatis adipisci architecto obcaecati sit voluptas ipsam, deleniti neque placeat tenetur cum tempore velit.</p>
+                            <p>Location - C wing Ground Floor</p>
                         
                         
                             <ul class="list-inline item-details">
@@ -436,20 +574,20 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         
-                            <h2>Project 2</h2>
+                            <h2>Mess Facility</h2>
                         
                         
                             <hr class="star-primary">
                         
-                        <img src="img/portfolio/2.jpg" class="img-responsive img-centered" alt="">
+                        #################<img src="img/portfolio/2.jpg" class="img-responsive img-centered" alt="">
                         
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim aliquid dicta ullam in repellendus amet perspiciatis adipisci architecto obcaecati sit voluptas ipsam, deleniti neque placeat tenetur cum tempore velit.</p>
+                            <p>Mess Bills and Mess Rebate</p>
                         
                         
                             <ul class="list-inline item-details">
                                 
                                     <li>Client: 
-                                        <strong><a href="#">Start Bootstrap</a></strong>
+                                        <strong><a href="https://gymkhana.iitb.ac.in/~hostel14/mess/messmenu/messmenu.html">Start Bootstrap</a></strong>
                                     </li>
                                 
                                 
@@ -459,7 +597,7 @@
                                 
                                 
                                     <li>Category: 
-                                        <strong><a href="#">Web Development</a></strong>
+                                        <strong><a href="#"> </a></strong>
                                     </li>
                                 
                             </ul>
@@ -487,12 +625,12 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         
-                            <h2>Project 3</h2>
+                            <h2>Maintance and Lan Complaint</h2>
                         
                         
                             <hr class="star-primary">
                         
-                        <img src="img/portfolio/3.jpg" class="img-responsive img-centered" alt="">
+                        #################<img src="img/portfolio/3.jpg" class="img-responsive img-centered" alt="">
                         
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim aliquid dicta ullam in repellendus amet perspiciatis adipisci architecto obcaecati sit voluptas ipsam, deleniti neque placeat tenetur cum tempore velit.</p>
                         
@@ -538,12 +676,12 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         
-                            <h2>Project 5</h2>
+                            <h2>Guest Room Booking</h2>
                         
                         
                             <hr class="star-primary">
                         
-                        <img src="img/portfolio/5.jpg" class="img-responsive img-centered" alt="">
+                        #################<img src="img/portfolio/5.jpg" class="img-responsive img-centered" alt="">
                         
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim aliquid dicta ullam in repellendus amet perspiciatis adipisci architecto obcaecati sit voluptas ipsam, deleniti neque placeat tenetur cum tempore velit.</p>
                         
@@ -561,7 +699,7 @@
                                 
                                 
                                     <li>Category: 
-                                        <strong><a href="#">Web Development</a></strong>
+                                        <strong><a href="#"> </a></strong>
                                     </li>
                                 
                             </ul>
@@ -589,12 +727,12 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         
-                            <h2>Project 4</h2>
+                            <h2>Lan Complaint</h2>
                         
                         
                             <hr class="star-primary">
                         
-                        <img src="img/portfolio/4.jpg" class="img-responsive img-centered" alt="">
+                        #################<img src="img/portfolio/4.jpg" class="img-responsive img-centered" alt="">
                         
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim aliquid dicta ullam in repellendus amet perspiciatis adipisci architecto obcaecati sit voluptas ipsam, deleniti neque placeat tenetur cum tempore velit.</p>
                         
@@ -612,7 +750,7 @@
                                 
                                 
                                     <li>Category: 
-                                        <strong><a href="#">Web Development</a></strong>
+                                        <strong><a href="#"> </a></strong>
                                     </li>
                                 
                             </ul>
@@ -640,12 +778,12 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         
-                            <h2>Project 6</h2>
+                            <h2>Facebook Group</h2>
                         
                         
                             <hr class="star-primary">
                         
-                        <img src="img/portfolio/6.jpg" class="img-responsive img-centered" alt="">
+                        #################<img src="img/portfolio/6.jpg" class="img-responsive img-centered" alt="">
                         
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim aliquid dicta ullam in repellendus amet perspiciatis adipisci architecto obcaecati sit voluptas ipsam, deleniti neque placeat tenetur cum tempore velit.</p>
                         
@@ -663,7 +801,58 @@
                                 
                                 
                                     <li>Category: 
-                                        <strong><a href="#">Web Development</a></strong>
+                                        <strong><a href="#"> </a></strong>
+                                    </li>
+                                
+                            </ul>
+                        
+                        
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        
+                            <h2>Facebook Group</h2>
+                        
+                        
+                            <hr class="star-primary">
+                        
+                        #################<img src="img/portfolio/6.jpg" class="img-responsive img-centered" alt="">
+                        
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim aliquid dicta ullam in repellendus amet perspiciatis adipisci architecto obcaecati sit voluptas ipsam, deleniti neque placeat tenetur cum tempore velit.</p>
+                        
+                        
+                            <ul class="list-inline item-details">
+                                
+                                    <li>Client: 
+                                        <strong><a href="#">Start Bootstrap</a></strong>
+                                    </li>
+                                
+                                
+                                    <li>Date: 
+                                        <strong><a href="#">2014-07-10</a></strong>
+                                    </li>
+                                
+                                
+                                    <li>Category: 
+                                        <strong><a href="#"> </a></strong>
                                     </li>
                                 
                             </ul>
@@ -682,20 +871,22 @@
         
 
         <!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="/js/jquery.js"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 <!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<script src="js/wow.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.fittext.js"></script>
+<script src="/js/wow.min.js"></script>
 
 <script src="//maps.googleapis.com/maps/api/js?key=&v=3.exp"></script>
-<script src="js/hpneo.gmaps.js"></script>
-<script src="js/gmaps.init.js"></script>
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="js/creative.js"></script>
+<script src="/js/creative.js"></script>
+<script src="/js/mess-menu.js"></script>
+
 
 
         

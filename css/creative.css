@@ -272,6 +272,8 @@ header .header-content .header-content-inner p {
     position: relative;
     margin: 0 auto;
     max-width: 650px;
+    padding: 0px;
+
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -282,8 +284,8 @@ header .header-content .header-content-inner p {
     height: 100%;
     text-align: center;
     color: #fff;
-    opacity: 0;
-    background: rgba(240,95,64,.9);
+    opacity: 1;
+    #background: rgba(240,95,64,.9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -294,6 +296,7 @@ header .header-content .header-content-inner p {
     top: 50%;
     width: 100%;
     text-align: center;
+
     transform: translateY(-50%);
 }
 
@@ -301,6 +304,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -310,11 +314,13 @@ header .header-content .header-content-inner p {
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 18px;
+    font-size: 52px;
 }
 
 .portfolio-box:hover .portfolio-box-caption {
     opacity: 1;
+    background: rgba(240,95,64,.9);#
+
 }
 
 @media(min-width:768px) {
@@ -323,7 +329,9 @@ header .header-content .header-content-inner p {
     }
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 22px;
+        font-size: 52px;
+        text-shadow : -0.1px 0 grey, 0 0.1px grey, 0.1px 0 grey, 0 -0.1px grey;
+
     }
 }
 
