@@ -10,18 +10,18 @@
 <title>Hugo Creative Theme</title>
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="/favicon.ico">
+<link rel="shortcut icon" href="https://example.org/favicon.ico">
 <!-- Bootstrap Core CSS -->
-<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="https://example.org/css/bootstrap.min.css" type="text/css">
 <!-- Custom Fonts -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="https://example.org/font-awesome/css/font-awesome.min.css" type="text/css">
 <!-- Plugin CSS -->
-<link rel="stylesheet" href="/css/animate.min.css" type="text/css">
+<link rel="stylesheet" href="https://example.org/css/animate.min.css" type="text/css">
 <!-- Custom CSS -->
-<link rel="stylesheet" href="/css/creative.css" type="text/css">
-<link rel="stylesheet" href="/css/modals.css" type="text/css">
+<link rel="stylesheet" href="https://example.org/css/creative.css" type="text/css">
+<link rel="stylesheet" href="https://example.org/css/modals.css" type="text/css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,14 +59,10 @@
                 
                 
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">portal</a>
                     </li>
                 
                 
-                
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
                 
             </ul>
         </div>
@@ -94,31 +90,56 @@
             
                 <a href="#about"  onclick="myFunction()"  class="btn btn-primary btn-xl page-scroll">Today Mess Menu</a>
             
+            <p id="demo1" style= "text-shadow:0.0px 0.0px  1px grey" ></p>
             <p id="demo"></p>
-
-
-
-
-
-     
-
-
-<script >
-    var today = new Date();
-    var h = today.getHours();
-    var d = today.getDay();
-    if (h <5)
-        var s="hi";
-    else
-        var s = "hoy";
-
-    var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    document.getElementById("demo").innerHTML = days[d]+s;
-
-</script>
 
    </div>
     </div>
+
+
+
+
+<script >
+           
+            var arr, body, tab, tr, td, tn, row, col, p, s, max;
+            var menu = [
+
+            [['namkeen dalya and lapsi', 'SambharChutni', 'Egg Omelet', 'Chocos', 'Chana boiled', 'Bread-Peanut Butter-Jam', 'Tea-coffee-ketchup', 'Banana / Boiled Egg', 'Paneer Bhurji', 'Milk + Bournvita'],['veg keema', 'Panner butter masala', 'dal fry (Tuar)', 'curd rice', 'chapati / roti', 'lemon Pickle', 'Fruit Custurd', 'Roasted Papad', 'Salad: Onion, Cucumber, Beet-root', 'Steam Rice', 'Rasam', 'Extras', 'Veg crispy'],['Chole + Aloo Tikki', 'Bread-Butter-Jam', 'Tea-ketchup'],['Gobhi Achari + Green Peas(<10%)', 'Ragadha masala', 'Veg Dum-Biryani + Soya beans /Raita', 'Tur dal', 'Salad:  Tomato, Carrot, Cucumber', 'chapati / roti', 'Tisa chutney+pickle', 'Steam Rice', 'Sambhar', 'Sweet Dish / Desserts', 'Coconut Laddu', 'Fruits', 'Extras', 'Egg Biryani']],[['Vercelli upma', 'Coconut chutni', 'Egg Bhurji', 'Cornflakes', 'Boiled Corn', 'Bread-Butter-Jam', 'Tea-coffee-ketchup', 'Banana / Boiled Egg', 'Paneer Bhurji', 'Milk + Bournvita'],['Veg Tawa Chole', 'Mixed Veg. Korma', 'moong dal chilka', 'dal khichdi/ Fry chillies', 'Methi paratha', 'Pickle', 'Curd', 'Fried Methi papad', 'Salad: Tomato, Carrot, Cucumber', 'Steam Rice', 'Sambhar', 'Extras', 'Kadhai Paneer'],['Bread pakoda', 'Bread-Butter-Jam', 'Tea-ketchup'],['Cabbage Mutter', 'Veg Manchurain Gravy', 'Tomato peas masala rice', 'Dal Adraki (moong + Tuar)', 'Salad: Onion, Cucumber, Beet-root4', 'chapati / roti', 'Pickle', 'Steam Rice', 'Rasam', 'Sweet Dish / Desserts', 'lavang latika', 'Fruits', 'Extras', 'Chicken Biryani']]
+            [['Poha (small pieces of aloo & onion)', 'Matki Usal ,Ratlami sev', 'Egg Omelet', 'Oats', 'Matki', 'Bread-Butter-Jam', 'Tea-coffee', 'Banana / Boiled Egg', 'Paneer Bhurji', 'Milk + Bournvita'],
+            ['amritsari bhindi', 'Tomato+Mutter gravy+ Sew', 'Dal Masala (Red Masoor + Tuar)', 'Tadaka Rice', 'chapati', 'Pickle', 'Curd', 'Fried kerala papad', 'Salad: Tomato, Carrot, Cucumber', 'Steam Rice', 'Sambhar', 'Extras', 'Chicken Sukha'],
+            ['Veg Maggi', 'Bread-Butter-Jam', 'Tea-coffee-ketchup'],
+            ['palak dry', 'Paneer Tikka Masala', 'Corn Rice', 'Chana Dal', 'Salad: Onion, Cucumber, Beet-root', 'chapati / roti', 'Pickle', 'Steam Rice', 'Rasam', 'Sweet Dish / Desserts', 'Kulfi candy', 'Fruits', 'Extras', 'Veg 65']],
+
+            [['Gobi Paratha', 'Curd, Sauce', 'Egg Bhurji', 'Cornflakes', 'Moong', 'Bread-Butter-Jam', 'Tea-coffee-ketchup', 'Banana / Boiled Egg', 'Paneer Bhurji', 'Milk + Bournvita']
+            ,['Aloo gobhi masala', 'Veg Kofta Curry', 'Dal Makhani', 'Peanut Rice', 'chapati / roti', 'Pickle', 'Curd', 'Masala Roasted papad', 'Salad:  Onion, Cucumber, Beet-root', 'Steam Rice', 'Rasam', 'Extras', 'Paneer Belle-Pepper'],['Misal Pav', 'Bread-Butter-Jam', 'Tea-ketchup'],['Lal matt chana dry', 'Dum Aloo', 'Onion Jeera Rice', 'Mix dal tadka', 'Salad: Cabbage salad', 'chapati / roti', 'Pickle', 'Steam Rice', 'Sambhar', 'Sweet Dish / Desserts', 'Rasmalai - 2pieces', 'Fruits', 'Extras', 'chicken Koliwada']],[['Green Peas upma & pineapple sheera', 'chutni', 'Egg Bhurji', 'Chocos', 'Masoori', 'Bread-Butter-Jam', 'Tea-coffee-ketchup', 'Banana / Boiled Egg', 'Paneer Bhurji', 'Milk + Bournvita'],['Karela Dry + Aloo(<20%)', 'Chole Bhature', 'Dal fry (Moong)', 'Onion Rice', 'chapati / roti', 'Pickle', 'Sweet & Salt Lassi', 'Masala Papad', 'Salad:  Onion, Cucumber, Beet-root', 'Steam Rice', 'Sambhar', 'Extras', 'Chicken Kolahpuri'],['Dahi wada', 'Bread-Peanut Butter-Jam', 'Tea-coffee-ketchup'],['Chawli masala dry', 'Babycorn Mushroom gravy', 'Pulihora Rice', 'Kali masoor daal', 'Salad: Onion, Cucumber, Beet-root', 'chapati / roti', 'Pickle', 'Steam Rice', 'Rasam', 'Sweet Dish / Desserts', 'Matichur laddu - 2 pcs', 'Fruits', 'Extras', 'Fish fry + Currey']],[['Idli and Meduwada', 'Chutni', 'Egg Omelet', 'Oats', 'Boiled Corn', 'Bread-Butter-Jam', 'Tea-coffee-ketchup', 'Banana / Boiled Egg', 'Paneer Bhurji', 'Milk + Bournvita'],['Gobi mutter dry', 'Kadi Pakoda', 'Amti Dal (dry fruits) (Tuar)', 'Vangi Bhatt', 'chapati / roti', 'Pickle', 'Butter Milk', 'Fried kerala papad', 'Salad: Tomato, Carrot, Cucumber', 'Steam Rice', 'Rasam', 'Extras', 'Chiken Xakoti'],['Brinjal+aalu+Onion Bhajia', 'Bread-Butter-Jam', 'Tea-ketchup'],['Lauki Dahiwala', 'Veg Kolhapuri', 'Lemon Rice', 'Dal Kolhapuri (Tuar)', 'Salad:  Tomato, Carrot, Cucumber', 'chapati / roti', 'Pickle', 'Steam Rice', 'Sambhar', 'Sweet Dish / Desserts', 'Lauki Halua', 'Fruits', 'Extras', 'Chicken Lollipop (4Pcs)']],[['Mix veg pratha', 'Curd,Sauce', 'Egg Bhurji', 'Cornflakes', 'Boiled Peanut', 'Bread-Butter-Jam', 'Tea-coffee-ketchup', 'Banana / Boiled Egg', 'Paneer Bhurji', 'Milk + Bournvita'],['Allo jeera lasooni', 'Methi Mutter Masala', 'Daal bukhara (black urad+kabli chana+rajma)', 'Ajwain Rice', 'chapati / roti', 'Pickle', 'Curd', 'Fried papad', 'Salad:] Peanut salad', 'Steam Rice', 'Sambhar', 'Extras', 'Chiken Handi'],['Bhel Puri', 'Bread-Butter-Jam', 'Tea-coffee-ketchup'],['Soya chilli', 'corn palak', 'Fried Rice', 'Palak Dal (Red masoor)', 'Salad:  Onion, Cucumber, Beet-root2', 'chapati / roti', 'Pickle', 'Steam Rice', 'Rasam', 'Sweet Dish / Desserts', 'Rava laddu with dry fruits', 'Fruits', 'Extras', 'Chiken Chilley Gravey']]];
+            
+
+
+
+            var breakfast = 0, lunch = 11, tiffin = 15, dinner = 19;
+            var time =0;
+            var today = new Date();
+            var h = today.getHours();
+            var d = today.getDay();
+            if (h >= dinner)
+                time = 3 ;
+            else if (h>=tiffin)
+                time = 2;
+            else if (h>=lunch)
+                time = 1;
+            else if (h>=breakfast)
+                time = 0;
+
+
+            var days = [['Sunday',"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]];
+            <!--document.getElementById('demo').innerHTML = days[0][d]+" "+h;-->
+            document.getElementById("demo1").innerHTML = menu[d][time][0];
+
+
+
+</script>
+
+
 
 </header>
 
@@ -320,7 +341,7 @@
                                     
                                     
                                         <div class="project-name">
-                                            Mess Facility
+                                            Mess Bills
                                         </div>
                                     
                                 </div>
@@ -337,12 +358,12 @@
                                 <div class="portfolio-box-caption-content">
                                     
                                         <div class="project-category text-faded">
-                                            Web Development
+                                             
                                         </div>
                                     
                                     
                                         <div class="project-name">
-                                            Maintance and Lan Complaint
+                                            Maintance Complaint
                                         </div>
                                     
                                 </div>
@@ -417,28 +438,6 @@
                     </a>
                 </div>
             
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#portfolioModal6" class="portfolio-box portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    
-                                        <div class="project-category text-faded">
-                                             
-                                        </div>
-                                    
-                                    
-                                        <div class="project-name">
-                                            Facebook Group
-                                        </div>
-                                    
-                                </div>
-                            </div>
-                        
-                    </a>
-                </div>
-            
         </div>
     </div>
 </section>
@@ -464,46 +463,6 @@
         
 
         
-
-        
-            <!-- CONTACT -->
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                
-                    <h2 class="section-heading">Let&#39;s Get In Touch!</h2>
-                
-                
-                    <hr class="primary">
-                
-                
-                    <p>Ready to start your next project with us? That&rsquo;s great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                
-            </div>
-            
-                <div class="
-                
-                    col-lg-4
-                
-                col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>9969815563</p>
-                </div>
-            
-            
-                <div class="
-                
-                    col-lg-4
-                
-                 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:h14manager@iitb.ac.in">h14manager@iitb.ac.in</a></p>
-                </div>
-            
-        </div>
-    </div>
-</section>
 
         
 
@@ -574,7 +533,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         
-                            <h2>Mess Facility</h2>
+                            <h2>Mess Bills</h2>
                         
                         
                             <hr class="star-primary">
@@ -625,7 +584,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         
-                            <h2>Maintance and Lan Complaint</h2>
+                            <h2>Maintance Complaint</h2>
                         
                         
                             <hr class="star-primary">
@@ -648,7 +607,7 @@
                                 
                                 
                                     <li>Category: 
-                                        <strong><a href="#">Web Development</a></strong>
+                                        <strong><a href="#"> </a></strong>
                                     </li>
                                 
                             </ul>
@@ -816,76 +775,25 @@
     </div>
 </div>
 
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        
-                            <h2>Facebook Group</h2>
-                        
-                        
-                            <hr class="star-primary">
-                        
-                        #################<img src="img/portfolio/6.jpg" class="img-responsive img-centered" alt="">
-                        
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim aliquid dicta ullam in repellendus amet perspiciatis adipisci architecto obcaecati sit voluptas ipsam, deleniti neque placeat tenetur cum tempore velit.</p>
-                        
-                        
-                            <ul class="list-inline item-details">
-                                
-                                    <li>Client: 
-                                        <strong><a href="#">Start Bootstrap</a></strong>
-                                    </li>
-                                
-                                
-                                    <li>Date: 
-                                        <strong><a href="#">2014-07-10</a></strong>
-                                    </li>
-                                
-                                
-                                    <li>Category: 
-                                        <strong><a href="#"> </a></strong>
-                                    </li>
-                                
-                            </ul>
-                        
-                        
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
         
 
         <!-- jQuery -->
-<script src="/js/jquery.js"></script>
+<script src="https://example.org/js/jquery.js"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="/js/bootstrap.min.js"></script>
+<script src="https://example.org/js/bootstrap.min.js"></script>
 <!-- Plugin JavaScript -->
-<script src="/js/jquery.easing.min.js"></script>
-<script src="/js/jquery.fittext.js"></script>
-<script src="/js/wow.min.js"></script>
+<script src="https://example.org/js/jquery.easing.min.js"></script>
+<script src="https://example.org/js/jquery.fittext.js"></script>
+<script src="https://example.org/js/wow.min.js"></script>
 
 <script src="//maps.googleapis.com/maps/api/js?key=&v=3.exp"></script>
-<script src="/js/hpneo.gmaps.js"></script>
-<script src="/js/gmaps.init.js"></script>
+<script src="https://example.org/js/hpneo.gmaps.js"></script>
+<script src="https://example.org/js/gmaps.init.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="/js/creative.js"></script>
-<script src="/js/mess-menu.js"></script>
+<script src="https://example.org/js/creative.js"></script>
+<script src="https://example.org/js/mess-menu.js"></script>
 
 
 
